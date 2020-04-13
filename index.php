@@ -1,4 +1,9 @@
 <?php 
-// Git 
+require 'session.php';
+require 'helpers.php';
 
-// Git Bash 
+if (! sess_has('user')) {
+    require 'unregistered.php';
+} else {
+    require 'welcome.php';
+}

@@ -8,7 +8,6 @@ This is a documentation file to anyone opening the current repository.
     - Each PHP Task With Code Description 
 
 # Mastering Markdown
-
 [Click here to open the page](https://guides.github.com/features/mastering-markdown/)
 
 # More Details
