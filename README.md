@@ -3,6 +3,7 @@
 This is a documentation file to anyone opening the current repository.
 
 # Tasks List
+- how to pull from github
 - Everyone **MUST** create a new repository for each:
     - Each HTML Design
     - Each PHP Task With Code Description 
@@ -31,3 +32,32 @@ git commit -m 'Fix errors'
 master branch is the Primary branch => Default
 
 git push origin master >> Push to the repository website
+
+
+# Session Tutorial
+
+First time user opens register.php file 
+If email is missing, 
+> submit php file 
+will store in `form_errors` email key 
+ Session ? 
+    form_errors ?
+        email ?
+            Email Is required 
+
+
+Second time user opens register.php file 
+Name is missing but everything else is filled 
+> submit.php 
+    Session ?   
+        form_errors ?
+        email ?
+            Email Is required 
+
+Name ? 
+    Session ?
+        form_errors ?            
+        email ?
+            Email Is required 
+        name ?
+            Name Is required 

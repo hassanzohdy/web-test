@@ -5,14 +5,10 @@ require 'form-data.php';
 
 clear_form_errors();
 
-$username = post('name');
-
 $email = post('email');
-
+$username = post('name');
 $password = post('password');
 $confirmPassword = post('confirm_password');
-
-$errors = [];
 
 // $username; 
 // $username = null; 
@@ -49,7 +45,7 @@ if (! $confirmPassword) {
 if (form_has_errors()) {
     redirect_to('register.php');
 } else {
-    // no errors
+    // Store user info
     sess_set('user', [
         'name' => $username,
         'email' => $email,
